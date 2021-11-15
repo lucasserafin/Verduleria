@@ -53,7 +53,7 @@ namespace Verduleria
             label2.Text = "";
             label3.Text = "";
             label6.Text = "";
-            label7.Text = "";
+            label7.Text = ""
             label9.Text = "";
             label8.Text = "";
             label4.Text = "PRECIO X KG";
@@ -66,16 +66,16 @@ namespace Verduleria
             textBox6.Enabled = false;
             button8.Enabled = true;            
             button8.Text = "AGREGAR";
-            verdura = 2;
+            verura = 2;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label2.Text = "CEBOLLA";
+            label2.Text = CEBOLLA";
             label1.Text = "";
             label3.Text = "";
             label4.Text = "";
-            label5.Text = "";
+            label5.Text  "";
             label9.Text = "";
             label8.Text = "";
             label7.Text = "PRECIO X KG";
@@ -83,7 +83,7 @@ namespace Verduleria
             textBox4.Enabled = true;
             textBox3.Enabled = true;
             textBox1.Enabled = false;
-            textBox2.Enabled = false;
+            textBox2.Enabled = false
             textBox5.Enabled = false;
             textBox6.Enabled = false;
             button8.Enabled = true;
@@ -100,7 +100,7 @@ namespace Verduleria
             label5.Text = "";
             label9.Text = "";
             label8.Text = "";
-            label7.Text = "PRECIO X KG";
+            label7.Text = "PRECIO X KG"
             label6.Text = "CANTIDAD DE KG";
             textBox4.Enabled = true;
             textBox3.Enabled = true;
@@ -150,7 +150,7 @@ namespace Verduleria
             textBox5.Enabled = true;
             textBox1.Enabled = false;
             textBox2.Enabled = false;
-            textBox3.Enabled = false;
+            textBo3.Enabled = false;
             textBox4.Enabled = false;
             button8.Enabled = true;
             button8.Text = "AGREGAR";
@@ -164,7 +164,7 @@ namespace Verduleria
             {
                 MessageBox.Show("TU COMPRA SUPERO LOS 100 $ "+"\n"+ "TIENES UN DESCUENTO DE EL 10%");
                 double porcentaje,final;
-                porcentaje = (monto * 10) / 100;
+                porcentaje = (monto * 10) / 100
                 final = monto - porcentaje;            
                 label11.Text = detalle + "\n" + "A PAGAR $ " + monto.ToString()+ "\n"+"MENOS EL 10% "+ "\n" + "FINAL A PAGAR $ " + final.ToString();
             }
@@ -180,7 +180,7 @@ namespace Verduleria
             {
                 case 1:
                     monto = monto + Convert.ToDouble(textBox1.Text)* Convert.ToDouble(textBox2.Text);
-                    tomate= Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text);
+                    tomate= Convert.ToDouble(textBox1.Tet) * Convert.ToDouble(textBox2.Text);
                     button1.Enabled = false;                  
                     detalle += (textBox2.Text +" KG. DE TOMATE A " + (textBox1.Text) + "  $...TOTAL DE TOMATE " + tomate.ToString() + "\n");
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE " + monto + " $");
@@ -188,7 +188,7 @@ namespace Verduleria
                     textBox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "";
-                    textBox5.Text = "";
+                    textBox5.Txt = "";
                     textBox6.Text = "";
                     label1.Text = "";
                     label2.Text = "";
@@ -196,7 +196,7 @@ namespace Verduleria
                     label4.Text = "";
                     label5.Text = "";
                     label6.Text = "";
-                    label7.Text = "";
+                    label7.Text = ""
                     label9.Text = "";
                     label8.Text = "";
 
@@ -204,13 +204,13 @@ namespace Verduleria
 
                     break;
                 case 2:
-                    monto = monto + Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text);
+                    monto = monto  Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text);
                     button2.Enabled = false;
                     banana= Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text);                    
-                    detalle += (textBox2.Text + " KG. DE BANANA A " + (textBox1.Text) + "  $...TOTAL DE BANANA " + banana.ToString() + "\n");
+                    detalle += (textBox2.Text  " KG. DE BANANA A " + (textBox1.Text) + "  $...TOTAL DE BANANA " + banana.ToSting() + "\n");
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE " + monto + " $");
                     textBox1.Text = "";
-                    textBox2.Text = "";
+                    textox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "";
                     textBox5.Text = "";
@@ -227,7 +227,7 @@ namespace Verduleria
                     break;
                 case 3:
                     monto = monto + Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text);
-                    cebolla = Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text);
+                    cebolla = Convert.ToDouble textBox3.Text) * Convert.ToDouble(textBox4.Text);
                     button3.Enabled = false;                    
                     detalle += (textBox3.Text + " KG. DE CEBOLLA A " + (textBox4.Text) + "  $....TOTAL DE CEBOLLA " + cebolla.ToString() + "\n");
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE " + monto +" $");
@@ -237,7 +237,7 @@ namespace Verduleria
                     textBox4.Text = "";
                     textBox5.Text = "";
                     textBox6.Text = "";
-                    label1.Text = "";
+                    labe1.Text = "";
                     label2.Text = "";
                     label3.Text = "";
                     label4.Text = "";
@@ -250,7 +250,7 @@ namespace Verduleria
                 case 4:
                     monto = monto + Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text);
                     morron = Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text);
-                    button4.Enabled = false;                 
+                    button4.Enabled = fals;                 
                     detalle += (textBox3.Text + " KG. DE MORRON A " + (textBox4.Text) + "  $...TOTAL DE MORRON " + morron.ToString()+"\n");
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE " + monto + " $");
                     textBox1.Text = "";
@@ -277,7 +277,7 @@ namespace Verduleria
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE" + monto + " $");
                     textBox1.Text = "";
                     textBox2.Text = "";
-                    textBox3.Text = "";
+                    textBox3.Tex = "";
                     textBox4.Text = "";
                     textBox5.Text = "";
                     textBox6.Text = "";
@@ -292,9 +292,9 @@ namespace Verduleria
                     label8.Text = "";
                     break;
                 case 6:
-                    monto = monto + Convert.ToDouble(textBox5.Text) * Convert.ToDouble(textBox6.Text);
+                    monto = monto + Convert.ToDouble(textBox5.Text) * Covert.ToDouble(textBox6.Text);
                     lechuga= Convert.ToDouble(textBox5.Text) * Convert.ToDouble(textBox6.Text);
-                    button6.Enabled = false;                
+                    button6.Enabed = false;                
                     detalle += (textBox5.Text + " KG. DE LECHUGA A " + (textBox6.Text) + "  $...TOTAL DE LECHUGA " + lechuga.ToString() + "\n");
                     MessageBox.Show(detalle + "\n" + "SU MONTO TOTAL ES DE"+ monto + " $");
                     textBox1.Text = "";
@@ -305,7 +305,7 @@ namespace Verduleria
                     textBox6.Text = "";
                     label1.Text = "";
                     label2.Text = "";
-                    label3.Text = "";
+                    lael3.Text = "";
                     label4.Text = "";
                     label5.Text = "";
                     label6.Text = "";
